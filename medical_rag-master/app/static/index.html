@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Medical RAG — Ingestion</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 60px auto; color: #222; }
+  h1 { font-size: 1.4rem; }
+  form { border: 1px solid #ddd; border-radius: 8px; padding: 24px; }
+  input[type=file] { display: block; margin: 12px 0; }
+  button { background: #1a1a1a; color: #fff; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; }
+  button:disabled { opacity: 0.5; cursor: default; }
+  #result { margin-top: 20px; padding: 12px; border-radius: 6px; white-space: pre-wrap; font-size: 0.9rem; }
+  .ok { background: #eaf7ea; border: 1px solid #b7dfb7; }
+  .err { background: #fbeaea; border: 1px solid #e3b7b7; }
+</style>
+</head>
+<body>
+  <h1>Medical RAG — Document Ingestion</h1>
+  <form id="upload-form">
+    <label for="file">Upload a PDF to parse, chunk, and embed:</label>
+    <input type="file" id="file" name="file" accept="application/pdf" required />
+    <button type="submit" id="submit-btn">Ingest</button>
+  </form>
+  <div id="result"></div>
+
+  <h1>Ask a question</h1>
+  <form id="ask-form">
+    <label for="question">Question:</label>
+    <input type="text" id="question" style="width:100%;padding:8px;margin:8px 0;" required />
+    <button type="submit">Ask</button>
+  </form>
+  <div id="ask-result"></div>
+
+  <h1>Search</h1>
+  <form id="search-form">
+    <label for="query">Query:</label>
+    <input type="text" id="query" name="query" style="width:100%;padding:8px;margin:8px 0;" required />
+    <label for="strategy">Strategy:</label>
+    <select id="strategy" style="display:block;margin:8px 0;padding:6px;">
+      <option value="hybrid">hybrid</option>
+      <option value="semantic">semantic</option>
+      <option value="keyword">keyword</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <div id="search-result"></div>
+
+  <h1>Evaluate strategies (LLM-as-judge, precision@k)</h1>
+  <form id="eval-form">
+    <label for="eval-queries">Test queries (one per line):</label>
+    <textarea id="eval-queries" rows="4" style="width:100%;padding:8px;margin:8px 0;" required></textarea>
+    <button type="submit">Run evaluation</button>
+  </form>
+  <div id="eval-result"></div>
+
+  <script>
+    document.getElementById("ask-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const question = document.getElementById("question").value;
+      const el = document.getElementById("ask-result");
+      el.className = ""; el.textContent = "Thinking...";
+      try {
+        const res = await fetch("/generation/ask", {
+          method: "POST", headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({ question, top_k: 5, strategy: "hybrid" })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Generation failed");
+        let out = data.answer + "\n\nReferences:\n";
+        for (const r of data.references) {
+          const pageLabel = (r.page_start == null) ? "" :
+            (r.page_end == null || r.page_end === r.page_start) ? `page ${r.page_start}` : `page ${r.page_start}->${r.page_end}`;
+          out += `[${r.number}] ${r.file_name} ${pageLabel}\n`;
+        }
+        el.className = "ok";
+        el.textContent = out;
+      } catch (err) {
+        el.className = "err"; el.textContent = err.message;
+      }
+    });
+
+    document.getElementById("search-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const query = document.getElementById("query").value;
+      const strategy = document.getElementById("strategy").value;
+      const el = document.getElementById("search-result");
+      el.className = ""; el.textContent = "Searching...";
+      try {
+        const res = await fetch("/retrieval/search", {
+          method: "POST", headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({ query, strategy, top_k: 5 })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Search failed");
+        el.className = "ok";
+        el.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        el.className = "err"; el.textContent = err.message;
+      }
+    });
+
+    document.getElementById("eval-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const queries = document.getElementById("eval-queries").value
+        .split("\n").map(q => q.trim()).filter(Boolean);
+      const el = document.getElementById("eval-result");
+      el.className = ""; el.textContent = "Running evaluation (this calls an LLM judge per retrieved chunk, may take a moment)...";
+      try {
+        const res = await fetch("/evaluation/run", {
+          method: "POST", headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({ queries, top_k: 5 })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Evaluation failed");
+        el.className = "ok";
+        el.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        el.className = "err"; el.textContent = err.message;
+      }
+    });
+  </script>
+
+  <script>
+    const form = document.getElementById("upload-form");
+    const resultEl = document.getElementById("result");
+    const btn = document.getElementById("submit-btn");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById("file");
+      if (!fileInput.files.length) return;
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      btn.disabled = true;
+      btn.textContent = "Ingesting...";
+      resultEl.className = "";
+      resultEl.textContent = "";
+
+      try {
+        const res = await fetch("/ingestion/upload", { method: "POST", body: formData });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Ingestion failed");
+        resultEl.className = "ok";
+        resultEl.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        resultEl.className = "err";
+        resultEl.textContent = err.message;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Ingest";
+      }
+    });
+  </script>
+</body>
+</html>

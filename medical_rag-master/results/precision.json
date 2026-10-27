@@ -1,0 +1,1014 @@
+{
+    "top_k": 5,
+    "results": [
+        {
+            "strategy": "semantic",
+            "mean_precision_at_k": 0.3400000000000001,
+            "per_query": [
+                {
+                    "query": "What daily dosage of low-dose aspirin does the USPSTF recommend for pregnant persons at high risk for preeclampsia?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/d of aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/day of low-dose aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage discusses the clinical benefits of low-dose aspirin but does not specify the recommended daily dosage."
+                        },
+                        {
+                            "chunk_id": "6df6a25d-4b5d-478f-9307-16a86e6368af",
+                            "relevant": false,
+                            "reason": "The passage identifies the target population but fails to specify the actual daily dosage recommended by the USPSTF."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": false,
+                            "reason": "The passage confirms the USPSTF recommends daily low-dose aspirin but fails to specify the actual dosage amount."
+                        }
+                    ]
+                },
+                {
+                    "query": "After how many weeks of gestation should low-dose aspirin prophylaxis be initiated?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be initiated after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be initiated between 12 and 28 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be prescribed after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage mentions the timing of aspirin initiation (<16 weeks) as a variable in stratified comparisons but does not provide a clinical recommendation or answer regarding when it should be initiated."
+                        },
+                        {
+                            "chunk_id": "a44bda38-a116-486c-b67d-11d7adbcbc32",
+                            "relevant": false,
+                            "reason": "The passage provides recommendations on which patients should receive low-dose aspirin but does not specify the gestational age at which initiation should occur."
+                        }
+                    ]
+                },
+                {
+                    "query": "What letter grade did the USPSTF assign to this recommendation statement?",
+                    "precision_at_k": 0,
+                    "relevant_count": 0,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "c049b1e6-0f3a-4c9c-8039-4f76825f22ba",
+                            "relevant": false,
+                            "reason": "The passage provides a disclaimer about the USPSTF's independence but does not mention or assign a letter grade to any recommendation."
+                        },
+                        {
+                            "chunk_id": "bf61d6c5-7d9c-438d-88b1-e5b443c6f3ba",
+                            "relevant": false,
+                            "reason": "The passage refers to a table for the recommendation rationale but does not explicitly state the letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "84f0234b-fddf-42cb-b3c3-ac838fa39fef",
+                            "relevant": false,
+                            "reason": "The passage provides general information about the USPSTF but does not mention a specific recommendation statement or its assigned letter grade."
+                        },
+                        {
+                            "chunk_id": "4c77ad84-9b47-4149-a6fb-4f0b77483bb6",
+                            "relevant": false,
+                            "reason": "The passage discusses administrative and funding details but does not mention the specific letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "a367acac-6103-49b9-99a3-bc85b47e0e45",
+                            "relevant": false,
+                            "reason": "The passage discusses the independence of the USPSTF but does not mention a specific letter grade for a recommendation."
+                        }
+                    ]
+                },
+                {
+                    "query": "Which six medical history conditions are listed as high-risk factors that warrant low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a44bda38-a116-486c-b67d-11d7adbcbc32",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk factors for which low-dose aspirin prophylaxis is recommended."
+                        },
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": false,
+                            "reason": "The passage mentions that a table of risk factors exists but does not actually list the six specific medical history conditions required by the query."
+                        },
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage mentions that high-risk factors are listed in a table, but it does not actually list the six specific medical history conditions requested by the query."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk medical conditions (history of preeclampsia, multifetal gestation, kidney disease, autoimmune disease, diabetes, and chronic hypertension) that warrant low-dose aspirin prophylaxis."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk conditions (preeclampsia history, diabetes, chronic hypertension, multifetal gestation, autoimmune disease, and kidney disease) that warrant low-dose aspirin prophylaxis."
+                        }
+                    ]
+                },
+                {
+                    "query": "How many moderate-risk factors must a pregnant person typically present to be considered a candidate for low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that pregnant persons with 2 or more moderate-risk factors may benefit from low-dose aspirin."
+                        },
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage mentions that pregnant persons with moderate-risk factors may benefit from aspirin but fails to specify the required number of factors."
+                        },
+                        {
+                            "chunk_id": "a44bda38-a116-486c-b67d-11d7adbcbc32",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that pregnant persons with 2 or more moderate-risk factors may benefit from low-dose aspirin."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be considered for individuals with more than 1 moderate-risk factor."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": false,
+                            "reason": "The passage lists moderate-risk factors but fails to specify the required number of these factors needed to qualify for low-dose aspirin prophylaxis."
+                        }
+                    ]
+                },
+                {
+                    "query": "According to the USPSTF assessment, what level of certainty is attached to the finding of a substantial net benefit for low-dose aspirin use in high-risk individuals?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "9a3fb11c-14d8-4b16-86d4-b94f090db0f1",
+                            "relevant": false,
+                            "reason": "The passage discusses harms and dosage but does not mention the USPSTF's level of certainty regarding the net benefit of aspirin."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        },
+                        {
+                            "chunk_id": "bf61d6c5-7d9c-438d-88b1-e5b443c6f3ba",
+                            "relevant": false,
+                            "reason": "The passage directs the reader to a table and manual for information but does not state the specific level of certainty regarding the net benefit of aspirin."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage discusses the clinical outcomes of low-dose aspirin for preeclampsia prevention but does not state the USPSTF's level of certainty regarding the net benefit."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        }
+                    ]
+                },
+                {
+                    "query": "How is preeclampsia defined in terms of blood pressure threshold and timing during pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "94abcbb2-88a5-4d5e-a943-002994c7877d",
+                            "relevant": true,
+                            "reason": "The passage explicitly defines the blood pressure threshold (≥ 140/90 mm Hg) and the timing (>20 weeks) required for a preeclampsia diagnosis."
+                        },
+                        {
+                            "chunk_id": "ce74c70f-7659-473c-9b75-e78191cfd39a",
+                            "relevant": false,
+                            "reason": "The passage discusses management and treatment of preeclampsia but does not define the blood pressure thresholds or the timing criteria required by the query."
+                        },
+                        {
+                            "chunk_id": "ceb5b39c-0987-44b7-baba-d2785ec7ccd7",
+                            "relevant": false,
+                            "reason": "The passage discusses the epidemiology and disparities associated with preeclampsia but does not define the specific blood pressure thresholds or timing criteria required by the query."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": false,
+                            "reason": "The passage discusses risk factors and aspirin prophylaxis for preeclampsia but does not define the blood pressure thresholds or the timing criteria required for a diagnosis."
+                        },
+                        {
+                            "chunk_id": "f27ebef1-80ea-473f-a723-386cae6cc816",
+                            "relevant": false,
+                            "reason": "The passage is a list of bibliographic references and does not contain the actual clinical definition or diagnostic criteria for preeclampsia."
+                        }
+                    ]
+                },
+                {
+                    "query": "What were the three specific bleeding harms consistently reported and evaluated across the cited randomized clinical trials?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "ff0a1170-e448-42d0-8d2f-ddc61fc46004",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists placental abruption, postpartum hemorrhage, and fetal intracranial bleeding as the bleeding harms consistently reported across the cited trials."
+                        },
+                        {
+                            "chunk_id": "9a3fb11c-14d8-4b16-86d4-b94f090db0f1",
+                            "relevant": false,
+                            "reason": "The passage discusses the absence of differences in harms but does not identify or list the three specific bleeding harms requested by the query."
+                        },
+                        {
+                            "chunk_id": "fdd50940-1acc-46c6-8355-8d825774cb22",
+                            "relevant": false,
+                            "reason": "The passage describes the study population and methodology of the trials but does not list or identify the three specific bleeding harms reported."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": false,
+                            "reason": "The passage states there is an absence of evidence for harms, rather than identifying three specific bleeding harms reported across the trials."
+                        },
+                        {
+                            "chunk_id": "f27ebef1-80ea-473f-a723-386cae6cc816",
+                            "relevant": false,
+                            "reason": "The passage is a list of bibliographic references and does not contain the content or findings of the cited studies."
+                        }
+                    ]
+                },
+                {
+                    "query": "What FDA safety communication warning regarding NSAID use around 20 weeks of gestation or later is mentioned, and how does low-dose aspirin differ?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": true,
+                            "reason": "The passage explicitly describes the FDA warning regarding NSAIDs at 20 weeks and clarifies that low-dose aspirin is an exception to this warning."
+                        },
+                        {
+                            "chunk_id": "0a4e62e1-45d1-4bfb-84e2-9c0f91a8ab4c",
+                            "relevant": false,
+                            "reason": "The passage lists the FDA safety communication but does not provide any information regarding how low-dose aspirin differs from the NSAID warning."
+                        },
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": false,
+                            "reason": "The passage provides information on low-dose aspirin dosage and timing but fails to mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses USPSTF recommendations for low-dose aspirin but does not mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage discusses the benefits of low-dose aspirin but does not mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        }
+                    ]
+                },
+                {
+                    "query": "What daily dosage of folic acid supplement does the USPSTF recommend for all persons planning or capable of pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "c049b1e6-0f3a-4c9c-8039-4f76825f22ba",
+                            "relevant": false,
+                            "reason": "The passage provides a disclaimer about the USPSTF's independence but does not contain the recommended folic acid dosage."
+                        },
+                        {
+                            "chunk_id": "84f0234b-fddf-42cb-b3c3-ac838fa39fef",
+                            "relevant": false,
+                            "reason": "The passage provides a general disclaimer about USPSTF recommendations but does not contain the specific dosage information requested."
+                        },
+                        {
+                            "chunk_id": "27582ab6-e159-4340-813e-7d0dce36f476",
+                            "relevant": false,
+                            "reason": "The passage mentions folic acid supplementation but does not specify the recommended daily dosage."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 0.4 to 0.8 mg of folic acid daily for persons planning or capable of pregnancy."
+                        },
+                        {
+                            "chunk_id": "f111a9b8-faa1-4184-b63d-d38e40d7b703",
+                            "relevant": false,
+                            "reason": "The passage contains only copyright and disclaimer information and does not provide the recommended folic acid dosage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "strategy": "keyword",
+            "mean_precision_at_k": 0.38000000000000006,
+            "per_query": [
+                {
+                    "query": "What daily dosage of low-dose aspirin does the USPSTF recommend for pregnant persons at high risk for preeclampsia?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/d of aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the recommended daily dosage of 81 mg/d for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": false,
+                            "reason": "The passage confirms the USPSTF recommends daily low-dose aspirin but fails to specify the actual dosage amount."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/day of low-dose aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": false,
+                            "reason": "The passage confirms the benefit of low-dose aspirin but fails to specify the actual daily dosage recommended by the USPSTF."
+                        }
+                    ]
+                },
+                {
+                    "query": "After how many weeks of gestation should low-dose aspirin prophylaxis be initiated?",
+                    "precision_at_k": 1,
+                    "relevant_count": 5,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be initiated after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be initiated between 12 and 28 weeks of gestation, optimally before 16 weeks."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be prescribed after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be initiated after 12 weeks of gestation for high-risk pregnant persons."
+                        },
+                        {
+                            "chunk_id": "27582ab6-e159-4340-813e-7d0dce36f476",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be initiated after 12 weeks of gestation for preeclampsia prevention."
+                        }
+                    ]
+                },
+                {
+                    "query": "What letter grade did the USPSTF assign to this recommendation statement?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states 'Grade B' in the recommendation table."
+                        },
+                        {
+                            "chunk_id": "9c2b4189-a544-48ba-8588-d2495455ead2",
+                            "relevant": false,
+                            "reason": "The passage contains only legal and citation disclaimers and does not mention a specific USPSTF recommendation or its assigned letter grade."
+                        },
+                        {
+                            "chunk_id": "08610180-660d-4733-bacb-cb362161da13",
+                            "relevant": false,
+                            "reason": "The passage discusses the public comment process and research gaps but does not state the letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "4c77ad84-9b47-4149-a6fb-4f0b77483bb6",
+                            "relevant": false,
+                            "reason": "The passage discusses administrative and funding details but does not mention the specific letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly provides the grade 'B' for the recommendation in the provided table."
+                        }
+                    ]
+                },
+                {
+                    "query": "Which six medical history conditions are listed as high-risk factors that warrant low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage mentions that high-risk factors are listed in a table, but it does not actually list the six specific medical history conditions requested by the query."
+                        },
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": false,
+                            "reason": "The passage mentions that high-risk factors exist in a table, but it does not actually list the six specific medical history conditions."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk factors (history of preeclampsia, multifetal gestation, kidney disease, autoimmune disease, diabetes, and chronic hypertension) that warrant low-dose aspirin prophylaxis."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk conditions (preeclampsia history, diabetes, chronic hypertension, multifetal gestation, autoimmune disease, and kidney disease) that warrant low-dose aspirin prophylaxis."
+                        },
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": false,
+                            "reason": "The passage mentions low-dose aspirin for preeclampsia prophylaxis but does not list the six specific medical history conditions required by the query."
+                        }
+                    ]
+                },
+                {
+                    "query": "How many moderate-risk factors must a pregnant person typically present to be considered a candidate for low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "d1e5ddeb-69df-4bb0-8ba6-f24eb2e8a9d0",
+                            "relevant": false,
+                            "reason": "The passage mentions that a combination of moderate-risk factors may increase risk, but it does not specify the exact number required to qualify for low-dose aspirin prophylaxis."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be considered for individuals with more than 1 moderate-risk factor."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage mentions that combinations of moderate-risk factors are used to determine risk, but it does not specify the exact number required to qualify for prophylaxis."
+                        },
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage states that pregnant persons with moderate-risk factors may benefit from aspirin, but it does not specify the required number of moderate-risk factors."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": false,
+                            "reason": "The passage lists moderate-risk factors but fails to specify the number of factors required to qualify for low-dose aspirin prophylaxis."
+                        }
+                    ]
+                },
+                {
+                    "query": "According to the USPSTF assessment, what level of certainty is attached to the finding of a substantial net benefit for low-dose aspirin use in high-risk individuals?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        },
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage discusses risk factors and clinical approaches for aspirin prophylaxis in preeclampsia but does not state the USPSTF's level of certainty regarding the net benefit."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses USPSTF recommendations for aspirin use in pregnant persons to prevent preeclampsia, but it does not provide the specific certainty level regarding net benefit for high-risk individuals requested in the query."
+                        },
+                        {
+                            "chunk_id": "ba1d05c7-5d0c-45f2-b54a-3caaa40f7ee6",
+                            "relevant": false,
+                            "reason": "The passage discusses research gaps regarding aspirin in pregnancy but does not provide the USPSTF's level of certainty regarding net benefit for high-risk individuals."
+                        }
+                    ]
+                },
+                {
+                    "query": "How is preeclampsia defined in terms of blood pressure threshold and timing during pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "94abcbb2-88a5-4d5e-a943-002994c7877d",
+                            "relevant": true,
+                            "reason": "The passage explicitly defines preeclampsia using the required blood pressure threshold (≥ 140/90 mm Hg) and the specific timing (>20 weeks gestation)."
+                        },
+                        {
+                            "chunk_id": "ba1d05c7-5d0c-45f2-b54a-3caaa40f7ee6",
+                            "relevant": false,
+                            "reason": "The passage discusses research needs for aspirin prophylaxis in pregnancy but does not define the blood pressure thresholds or timing criteria for diagnosing preeclampsia."
+                        },
+                        {
+                            "chunk_id": "09352bba-6f5e-4419-a3d5-f82151d1e786",
+                            "relevant": false,
+                            "reason": "The passage is a list of references and a table title that does not contain the actual clinical definition of preeclampsia regarding blood pressure or timing."
+                        },
+                        {
+                            "chunk_id": "a2695c0d-8dd7-4b29-8e93-120768f790e2",
+                            "relevant": false,
+                            "reason": "The passage discusses the use of low-dose aspirin for preeclampsia prevention but does not define the blood pressure thresholds or timing criteria for the condition."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses risk factors and aspirin prophylaxis for preeclampsia but does not define the blood pressure thresholds or the specific timing criteria required for a diagnosis."
+                        }
+                    ]
+                },
+                {
+                    "query": "What were the three specific bleeding harms consistently reported and evaluated across the cited randomized clinical trials?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "ff0a1170-e448-42d0-8d2f-ddc61fc46004",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists placental abruption, postpartum hemorrhage, and fetal intracranial bleeding as the bleeding harms consistently reported across the cited trials."
+                        },
+                        {
+                            "chunk_id": "fdd50940-1acc-46c6-8355-8d825774cb22",
+                            "relevant": false,
+                            "reason": "The passage describes the study design and participant demographics of the RCTs but does not list or discuss the specific bleeding harms evaluated."
+                        },
+                        {
+                            "chunk_id": "ba1d05c7-5d0c-45f2-b54a-3caaa40f7ee6",
+                            "relevant": false,
+                            "reason": "The passage discusses future research needs for aspirin in pregnancy but does not mention or list any specific bleeding harms."
+                        },
+                        {
+                            "chunk_id": "84f0234b-fddf-42cb-b3c3-ac838fa39fef",
+                            "relevant": false,
+                            "reason": "The passage is a disclaimer and provides no information regarding specific bleeding harms or clinical trial results."
+                        },
+                        {
+                            "chunk_id": "9a3fb11c-14d8-4b16-86d4-b94f090db0f1",
+                            "relevant": false,
+                            "reason": "The passage discusses the absence of differences in harms but does not list or identify the three specific bleeding harms requested by the query."
+                        }
+                    ]
+                },
+                {
+                    "query": "What FDA safety communication warning regarding NSAID use around 20 weeks of gestation or later is mentioned, and how does low-dose aspirin differ?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": true,
+                            "reason": "The passage explicitly describes the FDA warning regarding NSAID use at 20 weeks and clarifies that low-dose aspirin is an exception to this warning."
+                        },
+                        {
+                            "chunk_id": "0a4e62e1-45d1-4bfb-84e2-9c0f91a8ab4c",
+                            "relevant": false,
+                            "reason": "The passage lists the FDA safety communication but does not provide any information explaining how low-dose aspirin differs from the NSAID warning."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses USPSTF recommendations for low-dose aspirin but does not mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        },
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": false,
+                            "reason": "The passage discusses low-dose aspirin for preeclampsia but fails to mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        },
+                        {
+                            "chunk_id": "fdd50940-1acc-46c6-8355-8d825774cb22",
+                            "relevant": false,
+                            "reason": "The passage discusses low-dose aspirin for preeclampsia prevention but does not mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        }
+                    ]
+                },
+                {
+                    "query": "What daily dosage of folic acid supplement does the USPSTF recommend for all persons planning or capable of pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 0.4 to 0.8 mg of folic acid daily for persons planning or capable of pregnancy."
+                        },
+                        {
+                            "chunk_id": "ba1d05c7-5d0c-45f2-b54a-3caaa40f7ee6",
+                            "relevant": false,
+                            "reason": "The passage discusses aspirin prophylaxis for preeclampsia and does not mention folic acid dosage recommendations."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": false,
+                            "reason": "The passage discusses low-dose aspirin for preeclampsia prevention and does not mention folic acid dosage recommendations."
+                        },
+                        {
+                            "chunk_id": "27582ab6-e159-4340-813e-7d0dce36f476",
+                            "relevant": false,
+                            "reason": "The passage mentions that the USPSTF recommends folic acid supplementation but does not specify the recommended daily dosage."
+                        },
+                        {
+                            "chunk_id": "84f0234b-fddf-42cb-b3c3-ac838fa39fef",
+                            "relevant": false,
+                            "reason": "The passage provides a general disclaimer about USPSTF recommendations but does not contain the specific dosage information requested."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "strategy": "hybrid",
+            "mean_precision_at_k": 0.4,
+            "per_query": [
+                {
+                    "query": "What daily dosage of low-dose aspirin does the USPSTF recommend for pregnant persons at high risk for preeclampsia?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/d of aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 81 mg/day of low-dose aspirin for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": false,
+                            "reason": "The passage confirms the USPSTF recommends daily low-dose aspirin but fails to specify the actual dosage amount."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the recommended daily dosage of 81 mg/d for pregnant persons at high risk for preeclampsia."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": false,
+                            "reason": "The passage confirms the benefit of low-dose aspirin but fails to specify the actual daily dosage recommended by the USPSTF."
+                        }
+                    ]
+                },
+                {
+                    "query": "After how many weeks of gestation should low-dose aspirin prophylaxis be initiated?",
+                    "precision_at_k": 0.8,
+                    "relevant_count": 4,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be initiated after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be initiated between 12 and 28 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin should be prescribed after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be initiated after 12 weeks of gestation."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage mentions timing of initiation (<16 weeks) as a stratified variable but does not provide a clinical recommendation or guideline on when prophylaxis should be initiated."
+                        }
+                    ]
+                },
+                {
+                    "query": "What letter grade did the USPSTF assign to this recommendation statement?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "4c77ad84-9b47-4149-a6fb-4f0b77483bb6",
+                            "relevant": false,
+                            "reason": "The passage discusses administrative and funding details but does not mention the specific letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "bf61d6c5-7d9c-438d-88b1-e5b443c6f3ba",
+                            "relevant": false,
+                            "reason": "The passage refers to a table for the recommendation rationale but does not explicitly state the letter grade assigned to the recommendation."
+                        },
+                        {
+                            "chunk_id": "5e3383d9-a5d6-4187-aeb0-9f4667b22bcd",
+                            "relevant": true,
+                            "reason": "The passage explicitly provides the grade 'B' for the recommendation in the table."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states 'Grade B' in the recommendation table."
+                        },
+                        {
+                            "chunk_id": "9c2b4189-a544-48ba-8588-d2495455ead2",
+                            "relevant": false,
+                            "reason": "The passage contains only copyright and citation information and does not mention a specific recommendation or its assigned letter grade."
+                        }
+                    ]
+                },
+                {
+                    "query": "Which six medical history conditions are listed as high-risk factors that warrant low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.6,
+                    "relevant_count": 3,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage mentions that high-risk factors are listed in a table, but it does not actually list the six specific medical history conditions requested by the query."
+                        },
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": false,
+                            "reason": "The passage mentions that high-risk factors are listed in a table, but it does not actually list the six specific medical conditions."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk medical conditions (history of preeclampsia, multifetal gestation, kidney disease, autoimmune disease, diabetes, and chronic hypertension) that warrant low-dose aspirin prophylaxis."
+                        },
+                        {
+                            "chunk_id": "a44bda38-a116-486c-b67d-11d7adbcbc32",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk factors for which low-dose aspirin is recommended."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists the six high-risk conditions (preeclampsia history, diabetes, chronic hypertension, multifetal gestation, autoimmune disease, and kidney disease) that qualify a patient for low-dose aspirin prophylaxis."
+                        }
+                    ]
+                },
+                {
+                    "query": "How many moderate-risk factors must a pregnant person typically present to be considered a candidate for low-dose aspirin prophylaxis?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "823d512c-efaa-4517-8ec1-5419c3f9f029",
+                            "relevant": false,
+                            "reason": "The passage mentions that pregnant persons with moderate-risk factors may benefit from aspirin but fails to specify the required number of factors."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that low-dose aspirin prophylaxis should be considered for individuals with more than 1 moderate-risk factor."
+                        },
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that pregnant persons with 2 or more moderate-risk factors may benefit from low-dose aspirin."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage mentions that combinations of moderate-risk factors may be used but does not specify a required number of factors to qualify for prophylaxis."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": false,
+                            "reason": "The passage lists moderate-risk factors but fails to specify the required number of these factors needed to qualify for low-dose aspirin prophylaxis."
+                        }
+                    ]
+                },
+                {
+                    "query": "According to the USPSTF assessment, what level of certainty is attached to the finding of a substantial net benefit for low-dose aspirin use in high-risk individuals?",
+                    "precision_at_k": 0.4,
+                    "relevant_count": 2,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        },
+                        {
+                            "chunk_id": "627b8b73-e13e-42f2-9f4c-59ac293c03c3",
+                            "relevant": true,
+                            "reason": "The passage explicitly states that the USPSTF concludes with moderate certainty that there is a substantial net benefit for low-dose aspirin use in high-risk individuals."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses USPSTF recommendations for aspirin use in pregnancy to prevent preeclampsia but does not state the level of certainty regarding the net benefit."
+                        },
+                        {
+                            "chunk_id": "bf61d6c5-7d9c-438d-88b1-e5b443c6f3ba",
+                            "relevant": false,
+                            "reason": "The passage refers to a table and manual for information but does not actually state the level of certainty regarding the net benefit."
+                        },
+                        {
+                            "chunk_id": "2cf6360e-ce7e-487c-ada4-dc2ef36e6d72",
+                            "relevant": false,
+                            "reason": "The passage discusses the clinical outcomes of low-dose aspirin for preeclampsia prevention but does not state the USPSTF's level of certainty regarding the net benefit."
+                        }
+                    ]
+                },
+                {
+                    "query": "How is preeclampsia defined in terms of blood pressure threshold and timing during pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "94abcbb2-88a5-4d5e-a943-002994c7877d",
+                            "relevant": true,
+                            "reason": "The passage explicitly defines preeclampsia using the required blood pressure threshold (≥ 140/90 mm Hg) and the specific timing (>20 weeks gestation)."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": false,
+                            "reason": "The passage discusses risk factors and aspirin prophylaxis for preeclampsia but does not define the blood pressure thresholds or the timing criteria required for a diagnosis."
+                        },
+                        {
+                            "chunk_id": "ceb5b39c-0987-44b7-baba-d2785ec7ccd7",
+                            "relevant": false,
+                            "reason": "The passage discusses the epidemiology and disparities associated with preeclampsia but does not provide the specific blood pressure thresholds or timing criteria required by the query."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses risk factors and aspirin prophylaxis for preeclampsia but does not define the blood pressure thresholds or the specific timing criteria required for a clinical diagnosis."
+                        },
+                        {
+                            "chunk_id": "09352bba-6f5e-4419-a3d5-f82151d1e786",
+                            "relevant": false,
+                            "reason": "The passage is a list of references and a table title that does not contain the actual diagnostic criteria or definitions for preeclampsia."
+                        }
+                    ]
+                },
+                {
+                    "query": "What were the three specific bleeding harms consistently reported and evaluated across the cited randomized clinical trials?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "ff0a1170-e448-42d0-8d2f-ddc61fc46004",
+                            "relevant": true,
+                            "reason": "The passage explicitly lists placental abruption, postpartum hemorrhage, and fetal intracranial bleeding as the bleeding harms consistently reported across the trials."
+                        },
+                        {
+                            "chunk_id": "fdd50940-1acc-46c6-8355-8d825774cb22",
+                            "relevant": false,
+                            "reason": "The passage describes trial demographics and aspirin dosage protocols but does not list or evaluate specific bleeding harms."
+                        },
+                        {
+                            "chunk_id": "9a3fb11c-14d8-4b16-86d4-b94f090db0f1",
+                            "relevant": false,
+                            "reason": "The passage discusses the absence of differences in harms but does not list or identify the three specific bleeding harms requested by the query."
+                        },
+                        {
+                            "chunk_id": "ba1d05c7-5d0c-45f2-b54a-3caaa40f7ee6",
+                            "relevant": false,
+                            "reason": "The passage discusses future research needs for aspirin in pregnancy but does not list or evaluate any specific bleeding harms."
+                        },
+                        {
+                            "chunk_id": "ba414af7-bb01-4ffa-bc69-a71668af6d9b",
+                            "relevant": false,
+                            "reason": "The passage states there is an absence of evidence for harms, rather than identifying three specific bleeding harms reported across clinical trials."
+                        }
+                    ]
+                },
+                {
+                    "query": "What FDA safety communication warning regarding NSAID use around 20 weeks of gestation or later is mentioned, and how does low-dose aspirin differ?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "b87e0ee0-8f8a-4956-b2b0-5bc16f8acb9d",
+                            "relevant": true,
+                            "reason": "The passage explicitly describes the FDA warning regarding NSAIDs at 20 weeks and clarifies that low-dose aspirin is an exception to this warning."
+                        },
+                        {
+                            "chunk_id": "0a4e62e1-45d1-4bfb-84e2-9c0f91a8ab4c",
+                            "relevant": false,
+                            "reason": "The passage lists the FDA safety communication but does not provide the required information on how low-dose aspirin differs."
+                        },
+                        {
+                            "chunk_id": "161f990a-7cf3-4bae-a34c-ed929e279e8c",
+                            "relevant": false,
+                            "reason": "The passage discusses low-dose aspirin dosage and timing but fails to mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        },
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": false,
+                            "reason": "The passage discusses USPSTF recommendations for low-dose aspirin but does not mention the FDA safety communication regarding NSAID use at 20 weeks of gestation or later."
+                        },
+                        {
+                            "chunk_id": "7891680e-92b9-48b3-86e1-ee576ba38641",
+                            "relevant": false,
+                            "reason": "The passage discusses low-dose aspirin for preeclampsia but fails to mention the FDA safety communication regarding NSAID use at 20 weeks or later."
+                        }
+                    ]
+                },
+                {
+                    "query": "What daily dosage of folic acid supplement does the USPSTF recommend for all persons planning or capable of pregnancy?",
+                    "precision_at_k": 0.2,
+                    "relevant_count": 1,
+                    "retrieved_count": 5,
+                    "judgments": [
+                        {
+                            "chunk_id": "a467b907-1c2c-4df4-8e31-5b0e809c0e40",
+                            "relevant": true,
+                            "reason": "The passage explicitly states the USPSTF recommendation of 0.4 to 0.8 mg of folic acid daily for persons planning or capable of pregnancy."
+                        },
+                        {
+                            "chunk_id": "84f0234b-fddf-42cb-b3c3-ac838fa39fef",
+                            "relevant": false,
+                            "reason": "The passage provides a general disclaimer about USPSTF recommendations but does not contain the specific dosage information requested."
+                        },
+                        {
+                            "chunk_id": "27582ab6-e159-4340-813e-7d0dce36f476",
+                            "relevant": false,
+                            "reason": "The passage mentions folic acid supplementation but does not specify the recommended daily dosage."
+                        },
+                        {
+                            "chunk_id": "4c77ad84-9b47-4149-a6fb-4f0b77483bb6",
+                            "relevant": false,
+                            "reason": "The passage provides administrative and funding information but does not contain the recommended folic acid dosage."
+                        },
+                        {
+                            "chunk_id": "9a3fb11c-14d8-4b16-86d4-b94f090db0f1",
+                            "relevant": false,
+                            "reason": "The passage discusses aspirin dosage and does not mention folic acid recommendations."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "best_strategy": "hybrid"
+}

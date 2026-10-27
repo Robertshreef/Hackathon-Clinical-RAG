@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+pymupdf
+pymupdf4llm
+langchain-core
+langchain-google-genai
+langchain-openai
+qdrant-client
+rank_bm25
+fastembed
